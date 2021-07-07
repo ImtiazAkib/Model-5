@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        h1:hover {
+            color: orange;
+        }
+
+        .focus:focus {
+            color: peru;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: saddlebrown;
+        }
+
+        li:first-child {
+            color: blue;
+        }
+
+        li:last-child {
+            color: chocolate;
+        }
+
+        li:nth-child(2n) {
+            background-color: darkgreen;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: darkgrey;
+        }
+
+        h3::before {
+            content: 'Hello ';
+        }
+
+        h3::after {
+            content: '-gello';
+            background-color: darkorange;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a heading</h1>
+    <input class="focus" type="text">
+    <input type="text">
+    <a href="https://www.google.com/">google</a>
+    <br>
+    <h3>middle-size-1</h3>
+    <h3>middle-size-2</h3>
+    <h3>middle-size-3</h3>
+    <h3>middle-size-4</h3>
+    <h3>middle-size-5</h3>
+    <h3>middle-size-6</h3>
+    <ul>
+        <li>Kala</li>
+        <li>Bala</li>
+        <li>Mala</li>
+        <li>Caca</li>
+        <li>Baba</li>
+        <li>Hala</li>
+    </ul>
+</body>
+
+</html>
